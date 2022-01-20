@@ -28,8 +28,8 @@ console.log("Prezzo biglietto: " + prezzo.toFixed(2))
 
 /*va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65.*/
-var sconto20 = prezzo / 100 * 20 - prezzo
-var sconto40 = prezzo / 100 * 40 - prezzo
+var sconto20 = prezzo - prezzo * 20 / 100
+var sconto40 = prezzo - prezzo * 40 / 100
 
 //Sconto per minorenni
 if (eta < 18) {
